@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/stylos.css">
+    <title>Pokedex LaunchX</title>
+    
+</head>
+<body>
+
+    <section class="container">
+        <h1>Pokedex LaunchX</h1>
+
+        <div class="search">
+            <input type="text" placeholder="pikachu" id="pokeName" name="pokeName">
+            <button onclick="fecthPokemon()">Cambiar Pokemon</button><!--onClick es parte de DOM-->
+        </div>
+        
+        <div class="card-image">
+            <div class="title">
+                <h1 id="pokeName1">Name</h1>
+                <h2 id="pokeNum"># ?</h2>
+            </div>
+            
+            <div class="cardImg">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Pok%C3%A9_Ball_icon.svg/640px-Pok%C3%A9_Ball_icon.svg.png" alt="Pokemon" id="pokeImg"><br>
+            </div>
+
+            <div class="content-card">
+                <h3>Type</h3>
+                <p id="pokeType"></p>
+
+                <h3>Stats</h3>               
+                <ul id="pokeStats"></ul>
+                
+                <h3>Abilities</h3>
+                <ul id="pokeAbilities"></ul>
+
+            </div>
+        </div>
+    </section>
+    
+    <script src="assets/js/pokedex.js"></script>
+
+</body>
+</html>
