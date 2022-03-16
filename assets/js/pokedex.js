@@ -10,15 +10,20 @@ const fecthPokemon = () => {
     const pokeName = document.getElementById("pokeName");
     let pokeInput = pokeName.value.toLowerCase();
     const url = `https://pokeapi.co/api/v2/pokemon/${pokeInput}`;
+    pokeType.innerHTML = "";
+    pokeStats.innerHTML = "";
+    pokeAbilities.innerHTML = "";
     fetch(url).then((res) => { //promesas y consulta
         //manejo de errores
         if(res.status != "200"){
-            console.log(res);
-            pokeImage("https://media.comicbook.com/2017/04/pokemon-sad-moments-pikachu-crying-990351.jpg");
+            //console.log(res);
+            let infoPoke = {
+                number: "?",
+                name: "????",
+                image: "./assets/images/pikachuSad.png"
+            }
+            pokeInfo(infoPoke);
         }else{
-            pokeType.innerHTML = "";
-            pokeStats.innerHTML = "";
-            pokeAbilities.innerHTML = "";
             return res.json();
         }
         

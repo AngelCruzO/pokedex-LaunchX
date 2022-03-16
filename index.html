@@ -11,7 +11,7 @@
 <body>
 
     <section class="container">
-        <h1>Pokedex LaunchX</h1>
+        <h1 class="pokemon">Pokedex LaunchX</h1>
 
         <div class="search">
             <input type="text" placeholder="pikachu" id="pokeName" name="pokeName">
@@ -29,14 +29,20 @@
             </div>
 
             <div class="content-card">
+                
                 <h3>Type</h3>
                 <p id="pokeType"></p>
 
-                <h3>Stats</h3>               
-                <ul id="pokeStats"></ul>
+                <div class="stats">
+                    <h3>Stats</h3>               
+                    <ul id="pokeStats"></ul>
+                </div>
+
+                <div class="abilities">
+                    <h3>Abilities</h3>
+                    <ul id="pokeAbilities"></ul>
+                </div>
                 
-                <h3>Abilities</h3>
-                <ul id="pokeAbilities"></ul>
 
             </div>
         </div>

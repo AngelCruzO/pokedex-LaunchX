@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Pokemon';
+    src: url('../fonts/Pokemon.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -9,7 +16,6 @@ ul{
     list-style: none;
 }
 
-
 .container{
     display: flex;
     flex-direction: column;
@@ -17,24 +23,35 @@ ul{
     align-items: center;
 }
 
+.pokemon{
+    font-family: 'Pokemon';
+    font-size: 60px;
+    letter-spacing: 7px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: #ffda00;
+    text-shadow: 0 0 10px #002FFD;
+}
+
 .card-image{
-    width: 400px;
-    height: 550px;
-    border: 10px solid rgba(0, 0, 0, 0.3);
+    width: 450px;
+    height: 600px;
+    border: 10px solid #ffda00;
     border-radius: 5px;
     margin: 30px 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(328deg, rgba(28,28,29,0.7231267507002801) 15%, rgba(139,142,149,0.46262254901960786) 45%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(328deg, rgba(28,28,29,0.8) 15%, rgba(139,142,149,0.6) 45%, rgba(255,255,255,1) 100%);
+    border-radius: 10px;
 }
 
 .cardImg{
     width: 350px;
     height: 170px;
     border: 2px solid rgba(0, 0, 0, 0.3);
-    background: radial-gradient(circle, rgba(249,249,251,1) 0%, rgba(6,6,247,0.4766281512605042) 30%, rgba(240,241,245,0.742734593837535) 70%, rgba(238,15,0,1) 100%);
+    background: radial-gradient(circle, rgba(249,249,251,1) 0%, rgba(6,6,247,0.3085609243697479) 30%, rgba(240,241,245,0.4766281512605042) 70%, rgba(238,15,0,0.43461134453781514) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,6 +65,7 @@ ul{
     display: flex;
     flex-direction: row;
     margin-bottom: 20px;
+    font-size: 22px;
 }
 
 .title h1{
@@ -61,4 +79,8 @@ ul{
 
 .content-card{
     margin: 20px;
+}
+
+.stats,.abilities{
+    margin-top: 15px;
 }
