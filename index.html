@@ -14,8 +14,8 @@
         <h1 class="pokemon">Pokedex LaunchX</h1>
 
         <div class="search">
-            <input type="text" placeholder="pikachu" id="pokeName" name="pokeName">
-            <button onclick="fecthPokemon()">Cambiar Pokemon</button><!--onClick es parte de DOM-->
+            <input type="text" placeholder="pikachu or 2" id="pokeName" name="pokeName" focus>
+            <button onclick="fecthPokemon()"></button><!--onClick es parte de DOM-->
         </div>
         
         <div class="card-image">
@@ -30,8 +30,22 @@
 
             <div class="content-card">
                 
-                <h3>Type</h3>
-                <p id="pokeType"></p>
+                <div class="general">
+                    <div class="dato">
+                        <h3>Type</h3>
+                        <p id="pokeType"></p>
+                    </div>
+
+                    <div class="dato">
+                        <h3>Height</h3>
+                        <p id="pokeHeight"></p>
+                    </div>
+
+                    <div class="dato">
+                        <h3>Weight</h3>
+                        <p id="pokeWeight"></p>
+                    </div>                    
+                </div>
 
                 <div class="stats">
                     <h3>Stats</h3>               

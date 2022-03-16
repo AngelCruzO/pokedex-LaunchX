@@ -11,6 +11,11 @@
     box-sizing: border-box;
 }
 
+body{
+    background-image: url("../images/fondo1.jpg");
+    max-height: 1000px;
+}
+
 ul{
     text-decoration: none;
     list-style: none;
@@ -27,15 +32,39 @@ ul{
     font-family: 'Pokemon';
     font-size: 60px;
     letter-spacing: 7px;
-    margin-top: 10px;
-    margin-bottom: 15px;
+    margin-top: 5px;
     color: #ffda00;
     text-shadow: 0 0 10px #002FFD;
 }
 
+.search{
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.search input{
+    height: 40px;
+    width: 200px;
+    text-indent: 20px;
+    font-size: 16px;
+    border: 2px solid rgba(6,6,247,0.5);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.search button{
+    height: 50px;
+    width: 50px;
+    background-image: url("../images/pokeball.jpg");
+    background-size: cover;
+    cursor: pointer;
+}
+
 .card-image{
-    width: 450px;
-    height: 600px;
+    width: 550px;
+    height: 820px;
     border: 10px solid #ffda00;
     border-radius: 5px;
     margin: 30px 25px;
@@ -43,18 +72,22 @@ ul{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(328deg, rgba(28,28,29,0.8) 15%, rgba(139,142,149,0.6) 45%, rgba(255,255,255,1) 100%);
+    /*background: linear-gradient(328deg, rgba(28,28,29,0.8) 15%, rgba(139,142,149,0.6) 45%, rgba(255,255,255,1) 100%);*/
+    background-image: url("../images/25805.jpg");
+    background-size: cover;
     border-radius: 10px;
 }
+
 
 .cardImg{
     width: 350px;
     height: 170px;
-    border: 2px solid rgba(0, 0, 0, 0.3);
-    background: radial-gradient(circle, rgba(249,249,251,1) 0%, rgba(6,6,247,0.3085609243697479) 30%, rgba(240,241,245,0.4766281512605042) 70%, rgba(238,15,0,0.43461134453781514) 100%);
+    border: 5px solid rgba(255, 255, 255, 1);
+    background: radial-gradient(circle, rgba(249,249,251,1) 0%, rgba(6,6,247,1) 30%, rgba(240,241,245,1) 70%, rgba(238,15,0,1) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
 }
 
 .cardImg img{
@@ -64,7 +97,7 @@ ul{
 .title{
     display: flex;
     flex-direction: row;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: 22px;
 }
 
@@ -77,10 +110,48 @@ ul{
     text-align: center;
 }
 
+.title h2{
+    color: #ffff;
+}
+
 .content-card{
     margin: 20px;
+    color: #ffff;
+}
+
+.general{
+    display: flex;
+    flex-direction: row;
+}
+
+.dato{
+    margin-right: 30px;
+    text-align: center;
+}
+
+.dato h3{
+    font-size: 30px;
+}
+
+.dato p{
+    font-size: 25px;
+    text-align: center;
 }
 
 .stats,.abilities{
     margin-top: 15px;
+}
+
+.stats h3,.abilities h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.stats ul,.abilities ul{
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.stats ul li,.abilities li{
+    margin-bottom: 5px;
 }

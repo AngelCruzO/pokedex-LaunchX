@@ -4,6 +4,8 @@ let pokeType = document.getElementById("pokeType");
 let pokeStats = document.getElementById("pokeStats");
 let pokeAbilities = document.getElementById("pokeAbilities");
 let pokeNum = document.getElementById("pokeNum");
+let pokeHeight = document.getElementById("pokeHeight");
+let pokeWeight = document.getElementById("pokeWeight");
 
 //funcion para extraer pokemons
 const fecthPokemon = () => {
@@ -50,6 +52,9 @@ const pokeInfo = (url) => {
     pokeImg.src = url.image;
     pokeName.innerHTML = url.name;
     pokeNum.innerHTML = `# ${url.number}`;
+    pokeHeight.innerHTML = url.weight;
+    pokeWeight.innerHTML = url.height;
+
 
     for(var i=0;i<url.type.length;i++){
         pokeType.innerHTML += `${url.type[i].type.name} `;
