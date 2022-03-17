@@ -189,7 +189,7 @@ ul{
     
 }
 
-@media (min-width:300px) and (max-width:459px){
+@media (min-width:490px) and (max-width:459px){
 
     .title h1{
         width: 200px;
@@ -206,6 +206,35 @@ ul{
 
     .cardImg{
         width: 90%;
+    }
+
+}
+
+@media (min-width:300px) and (max-width:489px){
+
+    .title h1{
+        width: 200px;
+    }
+
+    .pokemon{
+        font-size: 40px;
+        letter-spacing: 3px;
+    }
+
+    .card-image{
+        width: 80%;
+    }
+
+    .cardImg{
+        width: 90%;
+    }
+
+    .search{
+        justify-content: center;
+    }
+
+    .search input{
+        margin-right: 50px;
     }
     
 }
