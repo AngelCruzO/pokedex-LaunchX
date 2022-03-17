@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: 'Pokemon';
     src: url('../fonts/Pokemon.ttf') format('truetype');
@@ -73,7 +74,7 @@ ul{
     justify-content: center;
     align-items: center;
     /*background: linear-gradient(328deg, rgba(28,28,29,0.8) 15%, rgba(139,142,149,0.6) 45%, rgba(255,255,255,1) 100%);*/
-    background-image: url("../images/25805.jpg");
+    background-image: url("../images/214.jpg");
     background-size: cover;
     border-radius: 10px;
 }
@@ -82,7 +83,7 @@ ul{
 .cardImg{
     width: 400px;
     height: 200px;
-    border: 5px solid rgba(255, 255, 255, 1);
+    border: 5px solid rgba(0, 0, 0, 1);
     background: radial-gradient(circle, rgba(249,249,251,1) 0%, rgba(6,6,247,1) 30%, rgba(240,241,245,1) 70%, rgba(238,15,0,1) 100%);
     display: flex;
     justify-content: center;
@@ -111,12 +112,14 @@ ul{
 }
 
 .title h2{
-    color: #ffff;
+    text-shadow: 0 0 5px #ffda00;
 }
 
 .content-card{
     margin: 20px;
-    color: #ffff;
+    color: #000;
+    text-shadow: 0 0 5px #ffda00;
+    font-weight: bolder;
 }
 
 .general{
@@ -155,8 +158,12 @@ ul{
     margin-left: 20px;
 }
 
-.stats ul li,.abilities li{
+.stats ul li,.abilities ul li{
     margin-bottom: 5px;
+}
+
+.stats ul li span{
+    float: right;
 }
 
 @media (min-width:500px) and (max-width:600px){
