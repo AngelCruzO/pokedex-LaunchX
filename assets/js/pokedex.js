@@ -61,7 +61,7 @@ const pokeInfo = (url) => {
     }
 
     for(var j=0;j<6;j++){
-        pokeStats.innerHTML += `<li> ${url.stats[j].stat.name}: ${url.stats[j].base_stat}</li>`;
+        pokeStats.innerHTML += `<li> ${url.stats[j].stat.name} <span>${url.stats[j].base_stat}</span></li>`;
     }
 
     for(var k=0;k<url.abilities.length;k++){
