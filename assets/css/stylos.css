@@ -100,19 +100,24 @@ ul{
     flex-direction: row;
     margin-bottom: 10px;
     font-size: 22px;
+    text-shadow: 0 0 5px #002FFD;
 }
 
 .title h1{
-    width: 270px;
-    margin-right: 20px;
-    background-color: aquamarine;
-    border: 1px solid rgba(0, 0, 0, 0.3);
+    width: 230px;
+    margin-right: 15px;
+    background: rgba(217,196,152,0.8);
+    border: 3px inset rgba(217,196,152,0.8);
     border-radius: 119px 0px 119px 0px / 150px 0px 150px 0px;
     text-align: center;
 }
 
 .title h2{
-    text-shadow: 0 0 5px #ffda00;
+    width: 100px;
+    background: rgba(217,196,152,0.8);
+    border: 3px inset rgba(217,196,152,0.8);
+    border-radius: 119px 0px 119px 0px / 150px 0px 150px 0px;
+    text-align: center;
 }
 
 .content-card{
