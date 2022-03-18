@@ -7,7 +7,7 @@ let pokeNum = document.getElementById("pokeNum");
 let pokeHeight = document.getElementById("pokeHeight");
 let pokeWeight = document.getElementById("pokeWeight");
 
-//funcion para extraer pokemons
+/* fetchPokemon: funcion para consumir poke API*/
 const fecthPokemon = () => {
     const pokeName = document.getElementById("pokeName");
     let pokeInput = pokeName.value.toLowerCase();
@@ -15,7 +15,7 @@ const fecthPokemon = () => {
     pokeType.innerHTML = "";
     pokeStats.innerHTML = "";
     pokeAbilities.innerHTML = "";
-    fetch(url).then((res) => { //promesas y consulta
+    fetch(url).then((res) => {
         //manejo de errores
         if(res.status != "200"){
             //console.log(res);
@@ -30,7 +30,6 @@ const fecthPokemon = () => {
         }
         
     }).then((data) => {
-        console.log(data);
         let infoPoke = {
             number: data.id,
             name: data.name,
@@ -46,8 +45,11 @@ const fecthPokemon = () => {
     })
 }
 
-//fecthPokemon();
-
+/* pokeInfo: función que despliega el contenido de un objeto a etiquetas HTML
+*
+* Entradas
+* url: informacion en formato json
+*/
 const pokeInfo = (url) => {
     pokeImg.src = url.image;
     pokeName.innerHTML = url.name;
